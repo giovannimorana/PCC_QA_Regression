@@ -1,0 +1,385 @@
+{
+    "pcc_server":
+        {
+            "pcc_url":"https://172.17.3.226:9999",
+            "pcc_host_ip":"172.17.3.226",
+            "pcc_linux_user":"pcc",
+            "pcc_linux_password":"cals0ft",
+            "pcc_username":"admin",
+            "pcc_password":"admin",
+            "tenant_user_username":"platinasystems@gmail.com",
+            "tenant_user_password":"calsoft@123",
+            "read_only_username":"calsoftplatina@gmail.com",
+            "read_only_password":"readonly@123",
+            "setup_password":"hc7giw4MHztsfYrT",
+            "setup_username":"Sylvester",
+	    "setup_upgrade_cmd":"sudo /home/pcc/platina-cli-ws/platina-cli run -u Sylvester -p hc7giw4MHztsfYrT --url https://cust-dev.lab.platinasystems.com --insecure --registryUrl https://cust-dev.lab.platinasystems.com:5000 --ru Sylvester --rp hc7giw4MHztsfYrT --insecureRegistry --prtKey /home/pcc/i28-keys/i28-id_rsa --pblKey /home/pcc/i28-keys/i28-authorized_keys --release stable --configRepo master --pruneVolumes"
+        },
+
+    "i28":
+        {
+            "host_name":"i28",
+            "host_ip":"172.17.2.28",
+            "username":"pcc",
+            "password":"cals0ft"
+
+        },
+
+    "clusterhead-1":
+        {
+            "invader_name":"cluster-head-68",
+            "pcc_url": "https://172.17.2.68:9999",
+            "pcc_host_ip": "172.17.2.68",
+            "pcc_linux_password": "cals0ft",
+            "pcc_username": "pcc",
+            "pcc_password": "cals0ft",
+            "bmc": "172.17.3.28",
+            "bmc_user": "ADMIN",
+            "bmc_pwd": "ADMIN",
+            "console": "ttyS1",
+            "managed_by_pcc": "true",
+            "ssh_keys": "pcc"
+        },
+
+    "clusterhead-2":
+        {
+            "invader_name":"cluster-head-69",
+            "pcc_url": "https://172.17.2.69:9999",
+            "pcc_host_ip": "172.17.2.69",
+            "pcc_linux_password": "cals0ft",
+            "pcc_username": "pcc",
+            "pcc_password": "cals0ft",
+            "bmc": "172.17.3.69",
+            "bmc_user": "ADMIN",
+            "bmc_pwd": "ADMIN",
+            "console": "ttyS1",
+            "managed_by_pcc": "true",
+            "ssh_keys": "pcc"
+        },
+
+    "server-1":
+        {
+            "server_name":"consul-01.example.com",
+            "pcc_url": "https://172.17.2.106:9999",
+            "pcc_host_ip": "172.17.2.106",
+            "pcc_linux_password": "cals0ft",
+            "pcc_username": "pcc",
+            "pcc_password": "cals0ft",
+            "bmc": "172.17.3.106",
+            "mgmt_ip": "172.17.2.106/23",
+            "bmc_user": "ADMIN",
+            "bmc_pwd": "ADMIN",
+            "console": "ttyS1",
+            "managed_by_pcc": "true",
+            "ssh_keys": "pcc"
+
+        },
+
+    "server-2":
+        {
+          "server_name":"consul-02.example.com",
+          "pcc_url": "https://172.17.2.107:9999",
+          "pcc_host_ip": "172.17.2.107",
+          "pcc_linux_password": "cals0ft",
+          "pcc_username": "pcc",
+          "pcc_password": "cals0ft",
+          "bmc": "172.17.3.107",
+          "mgmt_ip": "172.17.2.107/23",
+          "bmc_user": "ADMIN",
+          "bmc_pwd": "ADMIN",
+          "console": "ttyS1",
+          "managed_by_pcc": "true",
+          "ssh_keys": "pcc"
+        },
+
+    "server-3":
+        {
+          "server_name":"consul-03.example.com",
+          "pcc_url": "https://172.2.203.101:9999",
+          "pcc_host_ip": "172.17.2.203",
+          "pcc_linux_password": "cals0ft",
+          "pcc_username": "pcc",
+          "pcc_password": "cals0ft",
+          "bmc": "172.17.3.203",
+          "mgmt_ip": "172.17.2.203/23",
+          "bmc_user": "ADMIN",
+          "bmc_pwd": "ADMIN",
+          "console": "ttyS1",
+          "managed_by_pcc": "true",
+          "ssh_keys": "pcc"
+        },
+
+    "server-4":
+        {
+          "server_name":"servernode-130",
+          "pcc_url": "https://172.17.2.130:9999",
+          "pcc_host_ip": "172.17.2.130",
+          "pcc_linux_password": "cals0ft",
+          "pcc_username": "pcc",
+          "pcc_password": "cals0ft",
+          "bmc": "172.17.3.130",
+          "mgmt_ip": "172.17.2.130/23",
+          "bmc_user": "ADMIN",
+          "bmc_pwd": "ADMIN",
+          "console": "ttyS1",
+          "managed_by_pcc": "true",
+          "ssh_keys": "pcc"
+       },
+
+    "container-registry":
+        {
+            "name":"calsoft1",
+            "static_mode_name":"static_mode_CR",
+            "invalid_name" :"#^cal$%",
+            "fullyQualifiedDomainName":"i124.test.com",
+            "static_mode_fullyQualifiedDomainName":"static.fqdn.com",
+            "invalid_FQDN":"!%SAd",
+            "password":"fJdSr7QrWo4C",
+            "static_mode_password":"static123mode",
+            "invalid_password":"a21$%^638daad",
+            "modified_password":"calsoftfJdSr",
+            "secretKeyBase":"UzUUHwNZ5jlZ",
+            "modified_secretKeyBase":"calsoftq5LnSKz4",
+            "databaseName":"portus_production",
+            "databasePassword":"wjuy0i7ayLN3",
+            "port":3000,
+            "registryPort":5000,
+            "adminState":"Enabled",
+            "image_name":"hello-world",
+            "custom_image_name":"hello-world123",
+            "portus_uname":"Portus",
+            "invalid_portus_uname":"sadad$#%^&ad",
+            "modified_name":"calsoft123",
+            "modified_fullyQualifiedDomainName":"abc.def.com",
+            "tenant_user":"Tenant_6",
+            "invalid_storage_location":"sa#^cal$%"
+        },
+
+    "auth-profile":
+        {
+            "name":"Spike",
+            "invalid_name":"Cal*&^#softSpike",
+            "login_uname":"spike",
+            "invalid_login_uname":"ca*&^#lsoftspike",
+            "type_auth":"LDAP",
+            "domain":"ldap1.lab.platinasystems.com",
+            "invalid_domain":"ads^a$#",
+            "port":636,
+            "invalid_port":21321,
+            "userIDAttribute":"cn",
+            "userBaseDN":"ou=QA Users,ou=QA,dc=platinasystems,dc=com",
+            "invalid_userBaseDN":"ca#^&lsoftou=QA",
+            "groupBaseDN":"ou=QA Groups,ou=QA,dc=platinasystems,dc=com",
+            "invalid_groupBaseDN":"cal&^&!^softou=QA",
+            "anonymousBind":0,
+            "bindDN":"cn=Spike,ou=My Little Pony,ou=QA Users,ou=QA,dc=platinasystems,dc=com",
+            "invalid_bindDN":"cals%^!&oft=Spike",
+            "bindPassword":"pony123",
+            "invalid_bindPassword":"Calso&*#^ftpony123",
+            "encryptionPolicy":"simple_tls"
+        },
+
+    "tunneling":
+        {
+            "cidr":"10.99.0.0/16"
+        },
+
+    "certificate":
+        {
+            "Alias":"dummy_certificate",
+            "Filename":"Certificate_to_be_uploaded.pem",
+            "Description":"Added dummy certificate for testing"
+        },
+
+    "openSSH_keys":
+        {
+            "public_key_alias":"KC",
+            "public_key_description":"KC_Public_Key",
+            "public_type":"any",
+            "public_key":"Temp_public.pub",
+            "private_key_alias":"Dummy_Private",
+            "private_key_description":"Dummy_Private_Key",
+            "private_type":"Private",
+            "private_key":"Temp_private.ppk"
+        },
+
+    "ipam":
+        {
+            "controlName":"control-pvt",
+            "dataName":"data-pvt",
+            "controlSubnet":"10.0.130.0/24",
+            "dataSubnet":"192.168.150.0/24"
+        },
+
+    "network_manager":
+        {
+            "name":"network-pvt",
+            "nodes":["cluster-head-68","cluster-head-69","consul-01.example.com","consul-02.example.com","consul-03.example.com"],
+            "nodes_ip":["172.17.2.68","172.17.2.69","172.17.2.106","172.17.2.107","172.17.2.130"],
+            "controlCIDR":"control-pvt",
+            "dataCIDR":"data-pvt",
+            "igwPolicy":"default",
+	    "bgp_neighbors":{"cluster-head-68":{"local_as":64643,"bgp_neighbors":[{"neighbor_ip":"10.0.10.8","remote_as":64600},{"neighbor_ip":"10.0.10.12","remote_as":64601}]},"cluster-head-69":{"local_as":64643,"bgp_neighbors":[{"neighbor_ip":"10.0.10.10","remote_as":64600},{"neighbor_ip":"10.0.10.14","remote_as":64601}]}}
+        },
+
+    "ceph_cluster":
+        {
+            "name":"ceph-pvt",
+            "nodes":["cluster-head-68","consul-01.example.com","consul-02.example.com","consul-02.example.com"],
+            "nodes_ip":["172.17.2.68","172.17.2.106","172.17.2.107","172.17.2.130"],
+            "tags":["iSCSI"],
+            "networkClusterName":"network-pvt"
+        },
+
+    "ceph_pool":
+        {
+            "name":"pool-pvt",
+            "size":2,
+            "tags":[],
+            "pool_type":"data",
+	    "resilienceScheme":"replicated",
+            "quota":"1",
+            "quota_unit":"MiB"
+        },
+
+    "ceph_rbd":
+        {
+            "name":"rbd-pvt",
+            "image_feature":"layering",
+            "size":"1",
+            "tags":[],
+            "size_units":"MiB"
+        },
+
+    "ceph_fs":
+        {
+            "name":"fs-pvt",
+            "meta_pool":"pool1",
+            "data_pool":"pool2",
+            "default_pool":"pool3"
+        },
+
+    "ceph_rgw":
+        {
+            "name":"rados-pvt",
+            "poolName":"rgw-pool",
+            "targetNodes":["consul-01.example.com"],
+            "port":443,
+            "certificateName":"rgw-crt",
+            "S3Accounts":"rgw-app"
+        },
+
+    "k8s":
+        {
+            "id":0,
+            "k8sVersion":"v1.14.3",
+            "name":"k8s-pvt",
+            "cniPlugin":"kube-router",
+            "nodes":["cluster-head-69","consul-01.example.com","consul-02.example.com"],
+            "pools":[],
+            "networkClusterName":"network-pvt",
+            "appName":"nginxapp",
+            "appNamespace":"nginxapp",
+            "gitUrl":"https://github.com/platinasystems/devops",
+            "gitRepoPath":"helm-charts",
+            "gitBranch":"master",
+            "label":"nginxapp"
+        },
+
+    "os_deployment":
+        {
+            "image1_name":"centos78",
+            "image2_name":"ubuntu-bionic",
+            "image3_name":"ubuntu-focal",
+            "locale":"en-US",
+            "time_zone":"PDT",
+            "admin_user":"admin",
+            "ssh_keys":"KC",
+            "key_name":"id_rsa_khushboo"
+        },
+
+     "pxe-boot":
+        {
+            "gateway":"172.17.10.1",
+            "pxe_booted_server":"0123456789",
+            "adminStatus_up":"UP",
+            "adminStatus_down":"DOWN"
+        },
+
+     "node_groups":
+        {
+            "group1_name":"Test_Group_1",
+            "group2_name":"Test_Group_2",
+            "group3_name":"Test_Group_3",
+            "group4_name":"Test_Group_4",
+            "group5_name":"!@#$%^&*()_{}",
+            "group6_name":"11223344556677",
+            "group7_name":"  ",
+            "group8_name":"Test_",
+            "group9_name":"Test_Group_9",
+            "group1_desc":"Test_Group_Desc1",
+            "group2_desc":"Test_Group_Desc2",
+            "group3_desc":"Test_Group_Desc3",
+            "group4_desc":"Test_Group_Desc4",
+            "group5_desc":"!@#$%^&*()_{}",
+            "group6_desc":"11223344556677",
+            "group7_desc":"Test",
+            "group8_desc":"Test_",
+            "group9_desc":"Test_Group_Desc9"
+
+        },
+
+     "tenant":
+        {
+            "root_tenant":"ROOT",
+            "tenant_1":"Test_Tenant_1",
+            "tenant_2":"Test_Tenant_2",
+            "tenant_3":"Test_Tenant_3",
+            "tenant_4":"Test_Tenant_4",
+            "tenant_5":"Test_Tenant_5",
+            "tenant_6":"!@#$%^&*()_{}",
+            "tenant_7":"   ",
+            "sub_tenant":"SubTenant_1",
+            "root_tenant_desc":"the root tenant",
+            "tenant_desc_1":"Test_Tenant_1",
+            "tenant_desc_2":"Test_Tenant_2",
+            "tenant_desc_3":"Test_Tenant_3",
+            "tenant_desc_4":"Test_Tenant_4",
+            "tenant_desc_5":"Test_Tenant_5",
+            "tenant_desc_6":"!@#$%^&*()_{}",
+            "tenant_desc_7":"   ",
+            "sub_tenant_desc":"SubTenant_1"
+        },
+
+     "node_roles":
+        {
+            "app_1":"LLDP",
+            "app_2":"Baremetal Services",
+            "node_role1":"Test_NodeRole_1",
+            "node_role2":"Test_NodeRole_2",
+            "node_role3":"Test_NodeRole_3",
+            "node_role4":"Test_NodeRole_4",
+            "node_role5":"Test_NodeRole_5",
+            "node_role6":"!@#$%^&*()_{}",
+            "node_role7":"  ",
+            "node_role8":"1234567",
+            "node_role9":"Test_NodeRole_9",
+            "node_role10":"Test_NodeRole_10",
+            "node_role11":"Test_NodeRole_11",
+            "multiple_noderole":"Test_NR_",
+            "node_role_desc1":"Test_NodeRole_Desc_1",
+            "node_role_desc2":"Test_NodeRole_Desc_2",
+            "node_role_desc3":"Test_NodeRole_Desc_3",
+            "node_role_desc4":"Test_NodeRole_Desc_4",
+            "node_role_desc5":"Test_NodeRole_Desc_5",
+            "node_role_desc6":"!@#$%^&*()_{}",
+            "node_role_desc7":"  ",
+            "node_role_desc8":"1234567",
+            "multiple_noderole_desc":"Test_NR_Desc_",
+            "node_role_desc9":"Test_NodeRole_Desc_9",
+            "node_role_desc10":"Test_NodeRole_Desc_10",
+            "node_role_desc11":"Test_NodeRole_Desc_11"
+        }
+
+
+}
